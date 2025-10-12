@@ -1,14 +1,18 @@
-datasource:
-  url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  username: root
-  password: mysql
-jpa:
-  hibernate:
-    ddl-auto: update
-  defer-datasource-initialization: true
-  show-sql: true
-  properties:
+spring:
+  application:
+    name: ms-empleados
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_empleados?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: mysql
+  jpa:
     hibernate:
-      format_sql: true
-      dialect: org.hibernate.dialect.MySQLDialect
+      ddl-auto: update
+    defer-datasource-initialization: true
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
