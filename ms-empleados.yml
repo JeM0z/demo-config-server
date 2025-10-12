@@ -5,7 +5,7 @@ datasource:
   password: mysql
 jpa:
   hibernate:
-    ddl-auto: create-drop
+    ddl-auto: update
   defer-datasource-initialization: true
   show-sql: true
   properties:
